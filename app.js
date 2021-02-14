@@ -16,6 +16,11 @@ const KEY = "15674931-a9d714b6e9d654524df198e00&q";
 
 // show images
 const showImages = (images) => {
+    // i added this part after submitted assignment....
+    const result = images.length;
+    if (result <= 0) {
+        alert("reload and search again after pressing ok");
+    }
     imagesArea.style.display = "block";
     gallery.innerHTML = "";
     // show gallery title
